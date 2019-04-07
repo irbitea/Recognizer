@@ -3,6 +3,6 @@
 Sejas atpazīšanas rīks, izmantojot OpenCV un Flask.
 ## Saturs
 1. [Instalēšana](#Saturs)
-2. [Izmantošana](#Lietošana)
+2. [Lietošana](#Lietošana)
 ## Instalēšana
 ## Lietošana
