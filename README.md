@@ -5,3 +5,4 @@ Sejas atpazīšanas rīks, izmantojot OpenCV un Flask.
 1. Instalēšana
 2. Izmantošana
 3. Licence
+## Instalēšana
