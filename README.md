@@ -12,4 +12,7 @@ Sejas atpazīšanas rīks, izmantojot Raspberry Pi 3, OpenCV un Flask.
 ```
 export FLASK_ENV=development
 ```
+```
+FLASK_APP=appname.py flask run --host=0.0.0.0
+```
 ## Lietošana
