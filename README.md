@@ -3,6 +3,8 @@
 Sejas atpazīšanas rīks, izmantojot Raspberry Pi 3, OpenCV un Flask.
 ## Saturs
 1. [Instalēšana](#Saturs)
+     - [OpenCV](#OpenCV)
+     - [Flask](#Flask)
 2. [Lietošana](#Lietošana)
 ## Instalēšana
 ### OpenCV
