@@ -11,7 +11,7 @@ Sejas atpazīšanas rīks, izmantojot Raspberry Pi 3, OpenCV un Flask.
 ### Flask
 ![flask](https://user-images.githubusercontent.com/48751019/56082346-913a6b00-5e20-11e9-86e4-e6088dbb00f1.png)
 - Šim projektam vajadzīgs arī Flask (*micro web framework*). Lai instalētu un uzstādītu Flask,  es sekoju pamācībām (https://projects.raspberrypi.org/en/projects/python-web-server-with-flask/2 un http://mattrichardson.com/Raspberry-Pi-Flask/).
-- Servera startēšanai izmantoju šīs komandas:
+- Servera palaišanai izmantoju komandas:
 ```
 export FLASK_ENV=development
 ```
