@@ -64,7 +64,7 @@ while True:
                     (255,255,0), 
                     1
                    )
-        img_item = '/home/pi/opencv/build2/templates/static/images/person_'+ str(id) + '.jpg' #creates and image of the face using cordinates
+        img_item = '/home/pi/opencv/build2/templates/static/images/person_'+ str(id) + '.jpg' #creates and image of the face and stores it 
         cv2.imwrite(img_item, roi_color)        
     
     cv2.imshow('camera',img)
