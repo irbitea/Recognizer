@@ -35,3 +35,20 @@ export FLASK_ENV=development
 FLASK_APP=appname.py flask run --host=0.0.0.0
 ```
 ## Lietošana
+- Kad veikta VNC instalācija, var iestatīt attālināto displeju, lai redzētu kameras iegūtos attēlus reālā laikā. To izdara ar šīm komandām:
+```
+vncserver :1 -geometry 1366x600 -depth 16 -pixelformat rgb565
+export DISPLAY=:1
+```
+- Pirmais solis ir datu ievākšana, ko veic Kods face-data.py.
+```
+python face-data.py
+```
+- Kods face-trainer.py veic algoritma mācīšan jeb iemāca pirmajā solī iegūtos sejas attēlus.
+```
+python face-trainer.py
+```
+- Kods recognizer.py veic sejas atpazīšanu.
+```
+python recognizer.py
+```
