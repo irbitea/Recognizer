@@ -1,0 +1,166 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI';
+}
+
+/* <!-- Nav bar Section --> */
+.navbar{
+    background-color: transparent;
+    top: 0; 
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+    height: 50px;
+    padding: 1% 10;
+    font-size: 1.2em;
+    font-weight: 450;
+    border: 0;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #267871 !important;
+    transition: background-color 200ms linear;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+  }
+.navbar-fixed-top.scrolled li a{
+      color:#fff !important;
+}
+.navbar-fixed-top.scrolled li a:hover,.navbar-fixed-top.scrolled li a:active{
+    color:#fccd04 !important;
+}
+.navbar-brand{
+    min-height: 50px;
+    padding: 0px 15px 5px;
+}
+.navbar-default .navbar-nav li a{
+    color: #fff;
+}
+.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav li a:active{
+    color: #fccd04;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #267871;
+        color: #fff;
+    } 
+}
+
+/* <!-- Home Section --> */
+#home{
+    background: rgb(29,67,80);
+    background: linear-gradient(90deg, rgba(29,67,80,1) 40%, rgba(38,120,113,1) 100%);
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.landing-text h1{
+    color: #fff;
+    font-size:500%;
+    font-weight:700;
+}
+#p1{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 400;
+}
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+
+/* <!--SubSection --> */
+/* .subsection{
+    height: 50vh;
+} */
+.subsection2{
+    /* height: 50vh; */
+    background: rgb(29,67,80);
+    background: linear-gradient(90deg, rgba(29,67,80,1) 40%, rgba(38,120,113,1) 100%);
+}
+#avatar{
+    max-height: 400px;
+    max-width: 400px;
+    margin-top: 10%;
+}
+#db{
+    padding-left: 5%;
+    /* padding-top: 50px; */
+    margin-top: 10%;
+}
+#logo{
+    max-height: 300px;
+    max-width: 300px;
+    margin: 20px 0; 
+}
+.text {
+    color: #00052D;
+}
+.text1 {
+    color: #fff;
+}
+.padding{
+    padding: 60px 0;
+}
+#how{
+    background-color: #1D4350;
+    color:#fff;
+}
+h2, h3, h4, h5, h6 {
+    font-size: 200%;
+}
+h6{
+    color: #fff;
+}
+.stream{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+#contact{
+    padding: 80px 0px;
+    font-size: 300%;
+}
+.lead{
+    text-align: justify
+}
+.just{
+    text-align: justify;
+    font-size: 1.3em;
+}
+.btn{
+    outline:0;
+    background-color: #fccd04;
+    border: 2px;
+    border-radius: 4px;
+    color: #1D4350;;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.your-centered-div {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
