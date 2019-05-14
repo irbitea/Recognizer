@@ -12,6 +12,7 @@ Sejas atpazīšanas rīks, izmantojot Raspberry Pi 3, OpenCV un VNC.
 ![opencv-logo](https://user-images.githubusercontent.com/48751019/56082316-183b1380-5e20-11e9-975e-72c03db68796.png)
 - Vispirms jāveic OpenCV instalēšana Raspberry Pi. Šobrīd šajā projektā tiek izmantota OpenCV 4.0.0 versija. Instalācijas procesu veicu pēc pamācības (https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/), kurā ļoti skaidri tika aprakstīts katrs instalēšanas solis.
 ### VNC
+![image](https://user-images.githubusercontent.com/48751019/57721770-b293ae80-768d-11e9-8dbd-cf79ab38c9e1.png)
 - Komanda, lai instalētu VNC
 ```
 sudo apt-get update
