@@ -1,9 +1,140 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Recognizer</title>
-  </head>
-  <body>
-    <h1>Recognizer</h1>
-    <img id="bg" src="{{ url_for('video_feed') }}">
-  </body>
+<head>
+  <title>RPi Flask</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="#home">SĀKUMS</a></li>
+                    <li><a href="#about">PAR PROJEKTU</a></li>
+                    <li><a href="#how">DARBĪBA</a></li>
+                    <li><a href="#work">PROGRAMMAS</a></li>
+                    <li><a href="#stream">STREAM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home">
+        <div class="landing-text">
+            <h1>RECOGNIZER</h1>
+            <span id="span1"></span>
+            <p id="p1">
+                SEJAS ATPAZĪŠANAS RĪKS, IZMANTOJOT RASPBERRY PI, OPENCV UN VNC
+            </p>
+            <a class="ct-btn-scroll ct-js-btn-scroll" href="#about"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a>
+        </div>
+    </div>
+
+<!-- About Section -->
+    <div id="about" class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img id="avatar" src="/static/bilde.png" class="img-center">
+                </div>
+                <div class="text col-sm-6">
+                    <h2>PAR PROJEKTU</h2>
+                    <p class="lead">
+			Prototipa izveidē tika izmantotsRaspberry Pi Model B+, 
+                            uz kā tika rakstīts programmas kods. Pie Raspberry Pi 
+                            tika pievienota USB kamera, lai uzņemtu attēlus un video. 
+                            Lai uzrakstītu programmas kodu, tika importēta atvērtā 
+                            koda bibliotēka- OpenCV, kas ļauj iegūtajos attēlos veikt 
+                            sejas atrašanu un atpazīšanu, kā arī tos modificēt. Ņemot 
+                            vērā to, ka Raspberry Pi nav displeja, ir vajadzīgs pievienot 
+                            monitoru vai izmantot attālināto displeju (RealVNC). <br>
+                            Sadaļā "Stream" ir pieejams demonstrējums tikai ar 
+                            sejas noteikšanu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="subsection"></div> -->
+<!-- Work Section -->
+    <div id="how" class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="text1 col-sm-6">
+                        <h3>KĀ TAS DARBOJAS?</h5>
+                        <p class="lead">
+                                  Pirmais solis ir datu ievākšana, proti, jāiegūst konkrētā cilvēka sejas attēli. 
+                                Šajā gadījumā tiek uzņemti 15 attēli, kurus saglabā datu bāzē- mapē, kas atrodas 
+                                uz Raspberry Pi. Attēli tiek sagabāti ar atbilstošu ID.<br>
+                                Pēc datu ievākšanas tiek veikta koda apmācīšana. Datu bāzē esošajām 
+                                sejām tiek piešķirts ID jeb vārds. Šīs fāzes beigās tiek izveidots “.yml” fails.<br>
+                                Pēdējais solis ir seju atpazīšana. No kameras tiek iegūts jauns attēls ar
+                                personas seju. Ja šī seja ir iemācīta, tad mūsu kods norāda 
+                                personas ID un indeksu, kas nosaka, cik pareizs varētu būt šis pieņēmums. 
+                                Ja seja netiek atpazīta, tad šī personā tiek norādīta kā “unknown”.     
+                        </p>
+                </div>
+                <div class="col-sm-6">
+                    <img id="db" src="/static/avene.svg" class="img-center img-responsive">  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="work" class="padding">
+            <div class="container">
+                    <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <h4>OPENCV</h4>
+                                <p class="just">OpenCV ir atvērtā koda datorredzes un mašīnmācīšanas programmatūras 
+                                    bibliotēka, kuru izveidoja Intel 1999. gadā. Bibliotēkā ir vairāk nekā 
+                                    2500 optimizētu algoritmu, kurus var izmantot, lai noteiktu un atpazītu 
+                                    sejas vai objektus, tos izsekotu un veidotu 3D modeļus. OpenCV piedāvā arī dažādas funkcijas,
+                                    lai modificētu attēlus, piemēram, mainītu to izmērus, krāsu vai orientāciju.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <img id="logo" src="/static/opencv.svg.png" class="img-center">
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <h4>VNC</h4>
+                                <p class="just">RealVNC (Virtual Network Computing) – grafiska darbavirsmas koplietošanas 
+                                    sistēma, kas izmanto RFB protokolu (Remote Frame Buffer protocol), 
+                                    lai attālināti vadītu citu datoru. Ar VNC ir iespējams parādīt kameras iegūtos attēlus reālā
+                                    laikā.</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                <img id="logo" src="/static/vnc.png" class="img-center">
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <div id="stream" class="subsection2 padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 stream">
+                        <h6>SEJAS NOTEIKŠANA REĀLĀ LAIKĀ</h6>
+                        <a href="{{ url_for('stream') }}"><button class="btn">LIVE STREAM</button></a>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </div>  
+<script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
 </html>
