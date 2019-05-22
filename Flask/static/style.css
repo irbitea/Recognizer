@@ -157,10 +157,3 @@ h6{
     margin: 8px 0;
     cursor: pointer;
 }
-.your-centered-div {
-    position: absolute;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
